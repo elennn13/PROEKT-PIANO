@@ -128,7 +128,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="piano.cpp" />
-    <ClCompile Include="PROEKT PIANO.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="piano.hpp" />

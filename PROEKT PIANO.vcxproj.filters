@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PROEKT PIANO.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="piano.cpp">
       <Filter>Файлы заголовков</Filter>
     </ClCompile>

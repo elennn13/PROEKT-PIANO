@@ -2,7 +2,12 @@
 
 // Функция для отображения пианино
 void displayPiano() {
-    std::cout << "   | Z | X | C | V | B | N | M |\n";
+    void displayPiano(); {
+        std::cout << "   | Z | X | C | V | B | N | M |\n";
+        std::cout << "   |   |   |   |   |   |   |   |\n";
+        std::cout << "   |---|---|---|---|---|---|---|\n";
+        std::cout << "     C   D   E   F   G   A   B\n\n";
+    }
 }
 
 // Функция для отображения нажатой клавиши
@@ -39,6 +44,7 @@ void playSound(char key) {
     }
 
     Beep(frequency, 500); // Воспроизводим звук с заданной частотой и длительностью
+
 }
 
 int main() {
