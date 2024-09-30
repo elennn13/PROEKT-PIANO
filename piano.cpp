@@ -1,12 +1,14 @@
 #include "piano.hpp"
+#include "toolbox.hpp"
+#include <iostream>
+#include <conio.h> // Для _getch()
+#include <windows.h> // Для Beep()
+
 
 // Функция для отображения пианино
 void displayPiano() {
     void displayPiano(); {
         std::cout << "   | Z | X | C | V | B | N | M |\n";
-        std::cout << "   |   |   |   |   |   |   |   |\n";
-        std::cout << "   |---|---|---|---|---|---|---|\n";
-        std::cout << "     C   D   E   F   G   A   B\n\n";
     }
 }
 
@@ -45,22 +47,7 @@ void playSound(char key) {
 
     Beep(frequency, 500); // Воспроизводим звук с заданной частотой и длительностью
 
-}
-
-int main() {
-    char key;
-    displayPiano(); // Показываем начальное пианино
-
-    while (true) {
-        key = _getch(); // Ожидаем нажатия клавиши
-
-        // Очистка экрана (имитация)
-        system("cls");
-
-        displayPiano(); // Отображаем пианино снова
-        pressKey(key);  // Отображаем нажатую клавишу
-        playSound(key); // Воспроизводим звук
-    }
-
-    return 0;
+    system("cls");
+    displayPiano(); // Отображаем пианино снова
+    pressKey();  // Отображаем нажатую клавишу
 }

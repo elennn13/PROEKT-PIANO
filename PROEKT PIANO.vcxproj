@@ -127,10 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="piano.cpp" />
+    <ClCompile Include="toolbox.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="piano.hpp" />
+    <ClInclude Include="toolbox.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
